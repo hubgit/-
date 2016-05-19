@@ -1,0 +1,9 @@
+.my-cta {
+	border: 1px solid grey;
+	position: absolute;
+	right: 10px;
+	top: 50px;
+	z-index: 999;
+	background-color: white;
+	padding: 10px;
+}

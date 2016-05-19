@@ -1,0 +1,4 @@
+#v.3.6.5
+# HTTPS  deny all access to fig.bbc.co.uk
+User-agent: *
+Disallow: /

@@ -1,0 +1,1 @@
+glow.ready(function(){var a=new glow.forms.Form("#feedback-form");a.addTests("email",["minLen",{arg:1,field:"email"}],["isEmail"]).addTests("comment",["required",{message:"Please add a comment",on:"change submit"}])});

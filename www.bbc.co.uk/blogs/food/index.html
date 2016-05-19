@@ -1,0 +1,1124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><title>BBC - BBC Food blog</title><style type="text/css">
+        #archive-mothballed-message a:hover span {
+            text-decoration:underline;
+        }
+        #blq-container #archived-mothball-message a {
+            padding-left:250px;
+            padding-top:17px;
+            background-position: 180px 10px;
+        }
+        #ttd-masthead #archived-mothball-message a {
+            padding-left:250px;
+            padding-top:17px;
+            background-position: 180px 10px;
+        }
+        #k-masthead-container #archived-mothball-message a {
+            padding-left:250px;
+            padding-top:17px;
+            background-position: 180px 10px;
+        }
+        #archived-mothball-message a {
+            display:block;
+            height:56px;
+            background:url(../../globalresources/mothball-images/i.gif)
+                100px 10px no-repeat;
+            color:#666;
+            text-decoration:none;
+            padding-left:160px;
+            padding-top:12px;
+            font-size:20px;
+            font-family: verdana,helvetica,arial,sans-serif;
+            font-weight: normal;
+        }
+    </style><meta name="description" content="BBC chefs, presenters and experts pop in to share their food knowledge. Plus we offer a round-up of what's hot each week in the world of food on the web"><meta name="keywords" content="Food, cookery, recipes, expert, advice, James Martin, Simon Rimmer, Shelia Dillon,"><meta name="DCTERMS.created" content="2009-01-27T12:00:00Z"><meta name="DCTERMS.modified" content="2013-03-04T15:54+0:00"><!-- Turn on Identity --><!-- Glow cachebust:    
+                --><!-- Barlesque 2.72.5 --><link rel="schema.dcterms" href="http://purl.org/dc/terms/"><link rel="index" href="http://www.bbc.co.uk/a-z/" title="A to Z"><link rel="copyright" href="http://www.bbc.co.uk/terms/" title="Terms of Use"><link rel="icon" href="http://www.bbc.co.uk/favicon.ico" type="image/x-icon"><meta name="viewport" content="width = 974"><link rel="stylesheet" type="text/css" href="../../staticarchive/c808749ad4d537416e40591def8e05c130d72722.css"><script type="text/javascript">/*<![CDATA[*/ (function(undefined){if(!window.bbc){window.bbc={}}var ROLLING_PERIOD_DAYS=30;window.bbc.Mandolin=function(id,segments,opts){var now=new Date().getTime(),storedItem,DEFAULT_START=now,DEFAULT_RATE=1,COOKIE_NAME="ckpf_mandolin";opts=opts||{};this._id=id;this._segmentSet=segments;this._store=new window.window.bbc.Mandolin.Storage(COOKIE_NAME);this._opts=opts;this._rate=(opts.rate!==undefined)?+opts.rate:DEFAULT_RATE;this._startTs=(opts.start!==undefined)?new Date(opts.start).getTime():new Date(DEFAULT_START).getTime();this._endTs=(opts.end!==undefined)?new Date(opts.end).getTime():daysFromNow(ROLLING_PERIOD_DAYS);this._signupEndTs=(opts.signupEnd!==undefined)?new Date(opts.signupEnd).getTime():this._endTs;this._segment=null;if(typeof id!=="string"){throw new Error("Invalid Argument: id must be defined and be a string")}if(Object.prototype.toString.call(segments)!=="[object Array]"){throw new Error("Invalid Argument: Segments are required.")}if(opts.rate!==undefined&&(opts.rate<0||opts.rate>1)){throw new Error("Invalid Argument: Rate must be between 0 and 1.")}if(this._startTs>this._endTs){throw new Error("Invalid Argument: end date must occur after start date.")}if(!(this._startTs<this._signupEndTs&&this._signupEndTs<=this._endTs)){throw new Error("Invalid Argument: SignupEnd must be between start and end date")}removeExpired.call(this,now);var overrides=window.bbccookies.get().match(/ckns_mandolin_setSegments=([^;]+)/);if(overrides!==null){eval("overrides = "+decodeURIComponent(RegExp.$1)+";");if(overrides[this._id]&&this._segmentSet.indexOf(overrides[this._id])==-1){throw new Error("Invalid Override: overridden segment should exist in segments array")}}if(overrides!==null&&overrides[this._id]){this._segment=overrides[this._id]}else{if((storedItem=this._store.getItem(this._id))){this._segment=storedItem.segment}else{if(this._startTs<=now&&now<this._signupEndTs&&now<=this._endTs&&this._store.isEnabled()===true){this._segment=pick(segments,this._rate);if(opts.end===undefined){this._store.setItem(this._id,{segment:this._segment})}else{this._store.setItem(this._id,{segment:this._segment,end:this._endTs})}log.call(this,"mandolin_segment")}}}log.call(this,"mandolin_view")};window.bbc.Mandolin.prototype.getSegment=function(){return this._segment};function log(actionType,params){var that=this;require(["istats-1"],function(istats){istats.log(actionType,that._id+":"+that._segment,params?params:{})})}function removeExpired(expires){var items=this._store.getItems(),expiresInt=+expires;for(var key in items){if(items[key].end!==undefined&&+items[key].end<expiresInt){this._store.removeItem(key)}}}function getLastExpirationDate(data){var winner=0,rollingExpire=daysFromNow(ROLLING_PERIOD_DAYS);for(var key in data){if(data[key].end===undefined&&rollingExpire>winner){winner=rollingExpire}else{if(+data[key].end>winner){winner=+data[key].end}}}return(winner)?new Date(winner):new Date(rollingExpire)}window.bbc.Mandolin.prototype.log=function(params){log.call(this,"mandolin_log",params)};window.bbc.Mandolin.prototype.convert=function(params){log.call(this,"mandolin_convert",params);this.convert=function(){}};function daysFromNow(n){var endDate;endDate=new Date().getTime()+(n*60*60*24)*1000;return endDate}function pick(segments,rate){var picked,min=0,max=segments.length-1;if(typeof rate==="number"&&Math.random()>rate){return null}do{picked=Math.floor(Math.random()*(max-min+1))+min}while(picked>max);return segments[picked]}window.bbc.Mandolin.Storage=function(name){validateCookieName(name);this._cookieName=name;this._isEnabled=(bbccookies.isAllowed(this._cookieName)===true&&bbccookies.cookiesEnabled()===true)};window.bbc.Mandolin.Storage.prototype.setItem=function(key,value){var storeData=this.getItems();storeData[key]=value;this.save(storeData);return value};window.bbc.Mandolin.Storage.prototype.isEnabled=function(){return this._isEnabled};window.bbc.Mandolin.Storage.prototype.getItem=function(key){var storeData=this.getItems();return storeData[key]};window.bbc.Mandolin.Storage.prototype.removeItem=function(key){var storeData=this.getItems();delete storeData[key];this.save(storeData)};window.bbc.Mandolin.Storage.prototype.getItems=function(){return deserialise(this.readCookie(this._cookieName)||"")};window.bbc.Mandolin.Storage.prototype.save=function(data){window.bbccookies.set(this._cookieName+"="+encodeURIComponent(serialise(data))+"; expires="+getLastExpirationDate(data).toUTCString()+";")};window.bbc.Mandolin.Storage.prototype.readCookie=function(name){var nameEq=name+"=",ca=window.bbccookies.get().split("; "),i,c;validateCookieName(name);for(i=0;i<ca.length;i++){c=ca[i];if(c.indexOf(nameEq)===0){return decodeURIComponent(c.substring(nameEq.length,c.length))}}return null};function serialise(o){var str="";for(var p in o){if(o.hasOwnProperty(p)){str+='"'+p+'"'+":"+(typeof o[p]==="object"?(o[p]===null?"null":"{"+serialise(o[p])+"}"):'"'+o[p].toString()+'"')+","}}return str.replace(/,\}/g,"}").replace(/,$/g,"")}function deserialise(str){var o;str="{"+str+"}";if(!validateSerialisation(str)){throw"Invalid input provided for deserialisation."}eval("o = "+str);return o}var validateSerialisation=(function(){var OBJECT_TOKEN="<Object>",ESCAPED_CHAR='"\\n\\r\\u2028\\u2029\\u000A\\u000D\\u005C',ALLOWED_CHAR="([^"+ESCAPED_CHAR+"]|\\\\["+ESCAPED_CHAR+"])",KEY='"'+ALLOWED_CHAR+'+"',VALUE='(null|"'+ALLOWED_CHAR+'*"|'+OBJECT_TOKEN+")",KEY_VALUE=KEY+":"+VALUE,KEY_VALUE_SEQUENCE="("+KEY_VALUE+",)*"+KEY_VALUE,OBJECT_LITERAL="({}|{"+KEY_VALUE_SEQUENCE+"})",objectPattern=new RegExp(OBJECT_LITERAL,"g");return function(str){if(str.indexOf(OBJECT_TOKEN)!==-1){return false}while(str.match(objectPattern)){str=str.replace(objectPattern,OBJECT_TOKEN)}return str===OBJECT_TOKEN}})();function validateCookieName(name){if(name.match(/ ,;/)){throw"Illegal name provided, must be valid in browser cookie."}}})(); /*]]>*/</script><script type="text/javascript">/*<![CDATA[*/ if (typeof bbccookies_flag === 'undefined') { bbccookies_flag = 'ON'; } showCTA_flag = true; cta_enabled = (showCTA_flag && (bbccookies_flag === 'ON') ); (function(){var e="ckns_policy",m="Thu, 01 Jan 1970 00:00:00 GMT",k={ads:true,personalisation:true,performance:true,necessary:true};function f(p){if(f.cache[p]){return f.cache[p]}var o=p.split("/"),q=[""];do{q.unshift((o.join("/")||"/"));o.pop()}while(q[0]!=="/");f.cache[p]=q;return q}f.cache={};function a(p){if(a.cache[p]){return a.cache[p]}var q=p.split("."),o=[];while(q.length&&"|co.uk|com|".indexOf("|"+q.join(".")+"|")===-1){if(q.length){o.push(q.join("."))}q.shift()}f.cache[p]=o;return o}a.cache={};function i(o,t,p){var z=[""].concat(a(window.location.hostname)),w=f(window.location.pathname),y="",r,x;for(var s=0,v=z.length;s<v;s++){r=z[s];for(var q=0,u=w.length;q<u;q++){x=w[q];y=o+"="+t+";"+(r?"domain="+r+";":"")+(x?"path="+x+";":"")+(p?"expires="+p+";":"");bbccookies.set(y,true)}}}window.bbccookies={_setEverywhere:i,cookiesEnabled:function(){var o="ckns_testcookie"+Math.floor(Math.random()*100000);this.set(o+"=1");if(this.get().indexOf(o)>-1){g(o);return true}return false},set:function(o){return document.cookie=o},get:function(){return document.cookie},_setPolicy:function(o){return h.apply(this,arguments)},readPolicy:function(o){return b.apply(this,arguments)},_deletePolicy:function(){i(e,"",m)},isAllowed:function(){return true},_isConfirmed:function(){return c()!==null},_acceptsAll:function(){var o=b();return o&&!(j(o).indexOf("0")>-1)},_getCookieName:function(){return d.apply(this,arguments)},_showPrompt:function(){var o=(!this._isConfirmed()&&window.cta_enabled&&this.cookiesEnabled()&&!window.bbccookies_disable);return(window.orb&&window.orb.fig)?o&&(window.orb.fig("no")||window.orb.fig("ck")):o}};bbccookies._getPolicy=bbccookies.readPolicy;function d(p){var o=(""+p).match(/^([^=]+)(?==)/);return(o&&o.length?o[0]:"")}function j(o){return""+(o.ads?1:0)+(o.personalisation?1:0)+(o.performance?1:0)}function h(r){if(typeof r==="undefined"){r=k}if(typeof arguments[0]==="string"){var o=arguments[0],q=arguments[1];if(o==="necessary"){q=true}r=b();r[o]=q}else{if(typeof arguments[0]==="object"){r.necessary=true}}var p=new Date();p.setYear(p.getFullYear()+1);p=p.toUTCString();bbccookies.set(e+"="+j(r)+";domain=bbc.co.uk;path=/;expires="+p+";");bbccookies.set(e+"="+j(r)+";domain=bbc.com;path=/;expires="+p+";");return r}function l(o){if(o===null){return null}var p=o.split("");return{ads:!!+p[0],personalisation:!!+p[1],performance:!!+p[2],necessary:true}}function c(){var o=new RegExp("(?:^|; ?)"+e+"=(\\d\\d\\d)($|;)"),p=document.cookie.match(o);if(!p){return null}return p[1]}function b(o){var p=l(c());if(!p){p=k}if(o){return p[o]}else{return p}}function g(o){return document.cookie=o+"=;expires="+m+";"}function n(){var o='<script type="text/javascript" src="../../../static.bbci.co.uk/frameworks/bbccookies/0.6.6/script/bbccookies.js"><\/script>';if(window.bbccookies_flag==="ON"&&!bbccookies._acceptsAll()&&!window.bbccookies_disable){document.write(o)}}n()})(); /*]]>*/</script><script type="text/javascript"> if (! window.gloader) { window.gloader = [ "glow", {map: "http://node1.bbcimg.co.uk/glow/glow/map.1.7.7.js"}]; } </script><script type="text/javascript" src="../../../node1.bbcimg.co.uk/glow/gloader.0.1.6.js"></script><script type="text/javascript" src="../../staticarchive/21f604032d29edfa0a166f89bd41c95004718ed2.js"></script><script type="text/javascript">  bbcRequireMap = {"jquery-1":"/staticarchive/6cabfa9be6f12b6fec5ddf61c2dca1dde868555e", "jquery-1.4":"/staticarchive/cce0a0919c693f9473535d6941613bad16a4b40f", "jquery-1.9":"/staticarchive/14a082a42c1074b40bedae2666d3204e142899f5", "swfobject-2":"/staticarchive/b02e05aa3b12cfe8510390c7eccecd0af315b0a6", "demi-1":"/staticarchive/a916559c328a465dafcc30056734651ac8fdbb4b", "gelui-1":"/staticarchive/0159feca9179b145c659298e302b55dc76dfa15d", "cssp!gelui-1/overlay":"/staticarchive/fee6b4a3b22c51a59dd3ddebfb1b765049c683f6.css", "istats-1":"/staticarchive/b2d7be33eb67fa4b938cfa94238f8af9e929e4ae", "relay-1":"/staticarchive/ab39b61cf0980994246594bebe70fe460df87a42", "clock-1":"/staticarchive/7b8bb05c3fa19067c2c4c99144d21702cc15704f", "canvas-clock-1":"/staticarchive/703fd8b8a1b4ecf9cf624195bfb9691c648d3919", "cssp!clock-1":"/staticarchive/85ca997ae2f6bd2990765422dcc5b1c386c9d0cb.css", "jssignals-1":"/staticarchive/238f1d675d1626860f85815b7ab638cd41811a06", "jcarousel-1":"/staticarchive/3b38690b91f14468826c5f05f6e3da9beb55f4b1", "bump-3":"//emp.bbci.co.uk/emp/bump-3/bump-3.js", "gelui-1/widget": "/staticarchive/fcf01fd866ac629bad5a92592c208c3b04184cd3", "gelui-1/carousel": "/staticarchive/562f83c33cfe04062d95de8024ba03636cd0af4c", "gelui-1/core": "/staticarchive/d69cc93987af4e17f910996164dc15516614353e", "gelui-1/overlay": "/staticarchive/84bd061f5e14f0728caa8c933fe6d758b54fec5a", "gelui-1/autosuggest": "/staticarchive/ca81d8400ee443b0c31a47f1eea1c6872091dd48"}; require({ baseUrl: 'http://'+location.host+'/', 'dynamicServer': 'http://id.bbc.co.uk', 'secureServer': 'https://id.bbc.co.uk', 'assetVersion': '3.27.2', 'assetPath': 'http://static.bbci.co.uk/modules/identity/statusbar/3.27.2/' }; </script><script type="text/javascript" src="../../staticarchive/1333b9944bd6388f9645c37cab1e3a1d9ac83b90.js"></script><script type="text/javascript" src="../../staticarchive/fbe86a6c073f48f146a72f3e858ac837debcd84a.js"></script><!-- ISTATS --><script type="text/javascript"> /* <![CDATA[ */ define('id-statusbar-config', { 'translation_signedout': "Sign in", 'translation_signedin': "Your account", 'use_overlay' : false, 'signin_url' : "https://ssl.bbc.co.uk/id/signin", 'locale' : "en-GB", 'policyname' : "", 'ptrt' : "http://www.bbc.co.uk/" }); /* ]]> */ </script><script type="text/javascript"> (function () { if (! window.require) { throw new Error('idcta: could not find require'); } var map = {}; map['idapp-1'] = 'http://static.bbci.co.uk/idapp/0.63.23/modules/idapp/idapp-1'; map['idcta/idcta-1'] = 'http://static.bbci.co.uk/id/0.23.4/modules/idcta/idcta-1'; require({paths: map}); define('id-config', {"idapp":{"version":"0.63.23","hostname":"ssl.bbc.co.uk","insecurehostname":"www.bbc.co.uk","tld":"bbc.co.uk"},"idtranslations":{"version":"0.29.1"},"identity":{"baseUrl":"https:\/\/talkback.live.bbc.co.uk\/identity"},"pathway":{"name":null,"staticAssetUrl":"http:\/\/static.bbci.co.uk\/idapp\/0.63.23\/modules\/idapp\/idapp-1\/View.css"}}); })(); </script><link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.bbc.co.uk/blogs/food/atom.xml"><link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.bbc.co.uk/blogs/food/rss.xml"><!-- Comments Module Static Assets --><link rel="stylesheet" rev="stylesheet" href="../../staticarchive/b171f6295dafa594e000486294caf5ef2e356648.css"><script src="../../staticarchive/9fded8c38030f7e4fa43d9cc9c0033b2315234ef.js" type="text/javascript"></script><!--[if lte IE 7]> <link rel="stylesheet" rev="stylesheet" href="http://static.bbci.co.uk/modules/comments/2.6.19/css/comments-ie6-7.css"/> <![endif]--><style type="text/css">
+	@import '../../staticarchive/6e19cb98ed19c044c78020031b13199c99fa7633.css';
+</style><!--[if lte IE 7]>
+<style type="text/css">
+	@import '/guidance/style/pg_external_ie.css?r895178';
+</style>
+<![endif]--><!--[if IE 6]>
+<style type="text/css">
+	@import '/guidance/style/pg_external_ie6.css?r895178';
+</style>
+<![endif]--><script type="text/javascript" src="../../guidance/script/js/pg-gb.js%3Fr1112733"></script><script type="text/javascript" src="../../staticarchive/296b7e9b01b56142aec1bfa4760e2eb86073b802.js"></script><script type="text/javascript" src="../../staticarchive/880927e055ea2d75cc32254b7274b0e4a04822c2.js"></script><link rel="stylesheet" href="../../staticarchive/3c2b27e8596edca82a396f84e4c6a991b49acc9e.css" type="text/css"><link rel="stylesheet" href="../../staticarchive/3f22e626d9c302da131c20df3cd9b6fe5bc59b92.css" type="text/css"><script type="text/javascript" src="../../dnaimages/components/commentbox/gloader/commentbox.js"></script><script type="text/javascript" src="../../glow/gloader.js"></script><script type="text/javascript">
+    gloader.load(
+        ["glow", "1", "glow.net"],
+        {
+            async: true,
+            onLoad: function(glow) {
+				if (window.dna) {
+					glow.ready(function(){
+						
+						dna.lang.register(glow);
+					})
+				}
+				if (typeof identity !== 'undefined') {
+					glow.events.addListener(identity,'login',function(){
+						window.location.reload();
+					});
+				}
+            }
+        }
+    );
+</script><style type="text/css">
+	#dna_commentbox_holder{display: block;}
+	#dna_commentbox_holder_error{display: none;}
+</style><!-- DNA Comments --><link rel="stylesheet" media="screen" href="../../staticarchive/8db1272f67d2a84959a2f118e59c89632f24e33f.css" type="text/css"><!-- /DNA Comments --><link rel="stylesheet" href="../../staticarchive/f2c69a2a8a5b40e3ae72e52a50fec5656535ef98.css" type="text/css"><!-- If Opt Out code --><!-- End If Opt Out code --><script type="text/javascript" src="../../staticarchive/83f5bedfaaaae12a1220a872db0629fb6b14a507.js"></script></head><body class="khaki blogs bbc-food-blog">
+                <script type="text/javascript">/*<![CDATA[*/ bbcFlagpoles_istats = 'ON'; istatsTrackingUrl = '//sa.bbc.co.uk/bbc/bbc/s?name=SET-COUNTER&app_type=web&ml_name=SSI&ml_version=0.23.0&language=en-GB'; /*]]>*/</script><script type="text/javascript" src="../../../static.bbci.co.uk/archive_stats/modules/stats-1.0.0.js"></script>    <div id="blq-container" class="blq-lang-en-GB blq-gvl-2-8 blq-id-identitystatusbar"> <div id="blq-pre-mast" lang="en-GB"> <!-- Pre mast -->  </div>  <script type="text/html" id="blq-bbccookies-tmpl"><![CDATA[ <div id="bbccookies-prompt" class="bbccookies-d"> <h2> Cookies on the BBC website </h2> <p> We use cookies to ensure that we give you the best experience on our website.<span class="bbccookies-international-message"> We also use cookies to ensure we show you advertising that is relevant to you.</span> If you continue without changing your settings, we'll assume that you are happy to receive all cookies on the BBC website. However, if you would like to, you can <a href="http://www.bbc.co.uk/privacy/cookies/managing/cookie-settings.html">change your cookie settings</a> at any time. </p> <ul> <li id="bbccookies-continue"> <button type="button" id="bbccookies-continue-button">Continue</button> </li> <li id="bbccookies-more"><a href="http://www.bbc.co.uk/privacy/cookies/bbc">Find out more</a></li></ul> </div> ]]></script><script type="text/javascript">/*<![CDATA[*/ (function(){if(bbccookies._showPrompt()){var i=document,b=i.getElementById("blq-pre-mast"),f=i.getElementById("blq-global"),h=i.getElementById("blq-container"),c=i.getElementById("blq-bbccookies-tmpl"),a,g,e;if(b&&i.createElement){a=i.createElement("div");a.id="bbccookies";e=c.innerHTML;e=e.replace("<"+"![CDATA[","").replace("]]"+">","");a.innerHTML=e;if(f){f.insertBefore(a,b)}else{h.insertBefore(a,b)}g=i.getElementById("bbccookies-continue-button");g.onclick=function(){a.parentNode.removeChild(a);return false};bbccookies._setPolicy()}}})(); /*]]>*/</script><span id="blq-mast-background"></span> <div id="blq-container-inner" lang="en-GB">  <div id="blq-acc" class="blq-rst">  <p id="blq-mast-home" class="blq-no-images"><a href="http://www.bbc.co.uk/" hreflang="en-GB"> <span id="blq-blocks-wrapper"> <span class="blq-home">British Broadcasting Corporation</span><img src="../../staticarchive/2e00d1d53e9c3bd91993196aa19a1d88589969f0.png" alt="BBC" id="blq-blocks" width="84" height="24"><span class="blq-span">Home</span> </span> </a></p>  <p class="blq-hide"><strong><a id="page-top">Accessibility links</a></strong></p> <ul id="blq-acc-links"><li><a href="index.html#blq-content">Skip to content</a></li>  <li><a href="index.html#blq-local-nav">Skip to local navigation</a></li>  <li><a href="index.html#blq-nav-main">Skip to bbc.co.uk navigation</a></li> <li><a href="index.html#blq-search">Skip to bbc.co.uk search</a></li>  <li><a href="http://www.bbc.co.uk/accessibility/">Accessibility Help</a></li>   </ul></div>   <div id="archived-mothball-message" style="
+            background:url(../../globalresources/mothball-images/bg.jpg)
+                        0 0 repeat-x #fbfbfb;
+    ">
+        <a href="http://www.bbc.co.uk/globalresources/mothballing" style="
+
+        ">
+            This page has been archived and is no longer updated.
+            <span style="
+                display:block;
+                font-size:0.5em;
+                padding:10px 0 0 70px;
+                font-weight:bold;
+            ">
+                <span style="
+                color:#1A75BB; margin-left:100px;
+                ">Find out more about page archiving.</span>
+            </span>
+        </a>
+    </div><div id="blq-main" class="blq-clearfix">        
+
+<div id="blq-content">
+  
+<div id="banner">
+
+            <p id="heading"><a href="http://www.bbc.co.uk/food" title="Food home">Food<span></span></a></p>
+
+            <p id="sub-heading">blog</p>
+            
+</div>
+
+
+<ol id="site-nav"><li class=" first-child"><a href="../../food/index.html" class="">Home</a></li>
+	   <li><a href="../../food/recipes.1.html" class=" with-more">Recipes</a>
+		<ul class="sub-nav"><li class="sub-nav-item first-child"><a href="../../food/seasons.html" class="sub-nav-item first-child">In Season</a></li>
+		   <li class="sub-nav-item"><a href="../../food/occasions.html" class="sub-nav-item">Occasions</a></li>
+		   <li class="sub-nav-item"><a href="../../food/cuisines.html" class="sub-nav-item">Cuisines</a></li>
+		   <li class="sub-nav-item"><a href="http://www.bbc.co.uk/food/dishes" class="sub-nav-item">Dishes</a></li>
+		</ul></li>
+	   <li><a href="../../food/chefs.html" class="">Chefs</a></li>
+	   <li><a href="../../food/programmes.html" class="">Programmes</a></li>
+	   <li><a href="../../food/ingredients.html" class="">Ingredients</a></li>
+	   <li><a href="../../food/techniques.html" class="">Techniques</a></li>
+	   <li class="selected"><a href="index.html" class="">Blog</a></li>
+	   <li class="about"><a href="../../food/about.html">Feedback and FAQ</a></li>
+           <li class="binder"><span></span><a href="http://www.bbc.co.uk/food/binder/help">Recipe binder</a></li>
+        </ol><!-- main content starts here--><div id="content">  
+  <div class="main content">	
+	<!--contents starts here-->
+	<div class="content-left">
+	   <h1>BBC Food blog</h1>
+<p class="top-links"><a href="http://www.bbc.co.uk/blogs">BBC Blogs</a> | <a href="http://www.bbc.co.uk/food">BBC Food</a></p>
+			
+			    <div class="post" id="entry-312204">
+	<h2><a href="http://www.bbc.co.uk/blogs/food/2012/10/goodbye-from-bbc-food.shtml" rel="bookmark">Goodbye from the BBC Food blog</a></h2>
+
+	<div class="meta">	
+		<div class="flt-r" style="width:180px">
+			
+				<p style="text-align:right"><a href="http://www.bbc.co.uk/blogs/food/2012/10/goodbye-from-bbc-food.shtml" title="Comments made about this entry." rel="comments">Comments 
+(21)
+
+
+
+
+
+</a></p>
+			 
+				
+				<div class="flt-r bbc-st bbc-st-slim bbc-st-colour bbc-st-light">
+					<a href="http://www.bbc.co.uk/modules/sharetools/share?url=http%3A%2F%2Fwww.bbc.co.uk%2Fblogs%2Ffood%2F2012%2F10%2Fgoodbye-from-bbc-food.shtml&amp;appId=news">Share this page</a>
+				</div>
+			 
+		</div>
+		
+		<div style="float:left; width:420px">
+		
+			
+		
+			<p class="flt-l user-pic">
+					
+					<a href="http://www.bbc.co.uk/blogs/food/emily_angle/">
+	<img class="author_pic" src="../../staticarchive/ebfddf52403f6ba5d2e54f702dfc255db4056f5f.png" width="50" alt="Emily Angle"></a>			
+				
+				<span class="vcard author"><a href="http://www.bbc.co.uk/blogs/food/emily_angle/">Emily Angle</a></span> <span class="separator">|</span> <abbr class="published" title="2012-10-18T14:46:17+00:00">14:46 UK time, Thursday, 18 October 2012</abbr>
+			</p>
+		</div>
+		<div class="cleardiv"><!-- clearing --></div>
+	</div>
+	
+	<div class="post_content">
+		
+			<p>The chocolate mints have been passed, the brandies have been quaffed and now it’s time to say goodbye to the BBC Food blog.</p>
+<p>The blog is closing and will no longer be updated after this post closes for comments in two weeks.</p>
+<p>Thank you to those that have read the blog, shared it and posted comments. We’ve really enjoyed discussing your kitchen conundrums and reading your recipe ideas.</p>
+<p>But now we are making an adjustment to the way we publish. We are using a different (more flexible) article template to publish stories where we’ll continue to explore the way we eat now: investigating new (and old) ingredients, interviewing chefs and food producers, and examining the science and history of food.</p>
+<p>In the future, comment and analysis articles, similar to those posted in the BBC Food blog, will be published in these templates, and can be found from the BBC Food homepage.</p>
+<p>This change will enable us to do what the BBC Food blog has always set out to do, but more effectively.<br>We’re still available for a natter on Twitter (@BBCFood) and on <a href="http://pinterest.com/bbcfood">Pinterest</a>.</p>
+<p>Thank you again for all your contributions,</p>
+<p>Emily</p>
+<p>BBC Food producer</p>
+		
+
+		
+		
+		 
+	</div>
+</div>
+
+
+			 
+			    <div class="post" id="entry-311285">
+	<h2><a href="http://www.bbc.co.uk/blogs/food/2012/09/confessions-of-a-gadget-junkie.shtml" rel="bookmark">Confessions of a gadget junkie</a></h2>
+
+	<div class="meta">	
+		<div class="flt-r" style="width:180px">
+			
+				<p style="text-align:right"><a href="http://www.bbc.co.uk/blogs/food/2012/09/confessions-of-a-gadget-junkie.shtml" title="Comments made about this entry." rel="comments">Comments 
+(18)
+
+
+
+
+
+</a></p>
+			 
+				
+				<div class="flt-r bbc-st bbc-st-slim bbc-st-colour bbc-st-light">
+					<a href="http://www.bbc.co.uk/modules/sharetools/share?url=http%3A%2F%2Fwww.bbc.co.uk%2Fblogs%2Ffood%2F2012%2F09%2Fconfessions-of-a-gadget-junkie.shtml&amp;appId=news">Share this page</a>
+				</div>
+			 
+		</div>
+		
+		<div style="float:left; width:420px">
+		
+			
+		
+			<p class="flt-l user-pic">
+					
+					<a href="http://www.bbc.co.uk/blogs/food/fiona_beckett/">
+	<img class="author_pic" src="../../staticarchive/4dfb4d3074561b68838a9e259b6617955ebe4c4d.png" width="50" alt="Fiona Beckett"></a>			
+				
+				<span class="vcard author"><a href="http://www.bbc.co.uk/blogs/food/fiona_beckett/">Fiona Beckett</a></span> <span class="separator">|</span> <abbr class="published" title="2012-09-10T11:14:08+00:00">11:14 UK time, Monday, 10 September 2012</abbr>
+			</p>
+		</div>
+		<div class="cleardiv"><!-- clearing --></div>
+	</div>
+	
+	<div class="post_content">
+		
+			<p>The other day I was given a bean slicer by a kind friend who couldn’t believe I still sliced my runner beans by hand. I bought some and eagerly set to work only to find that most of the beans were too big to fit into it. Which left me with a gadget that will slice thin beans which don’t really need slicing anyway.</p>
+<p>It’s not the only gadget I’ve got that doesn’t earn its keep. There’s an egg separator, a hard-boiled egg slicer and a musical egg-timer you pop in the boiling water which plays 'Killing me softly' when the eggs are soft-boiled. My husband inexplicably loves that.</p>
+<div class="imgCaptionCenter" style="text-align: center; display: block; "><img class="mt-image-center" style="margin: 0 auto 5px;" src="../../staticarchive/c57a36060d6e94c5f1e8e698be9028139dc2efe5.jpg" alt="Slow cooker beef" width="448" height="256"><p style="margin: 0px auto 20px; width: 448px; color: #666666; font-size: 11px;">Gadget proof? Would your slow cooker come out of the cupboard for this <a title="Beef brisket" href="../../food/recipes/slow_cooker_beef_brisket_98634.html" target="_self">beef brisket</a> ?</p>
+</div>
+<p>I have a gravy de-greaser and a cherry and olive stoner that I use once a year, if that. A lemon zester (what’s wrong with the small holes on the grater?) and a gadget for stamping out ravioli that I bought on an Italian trip when I went mad in a local hardware store. And this I haven’t ever used - along with a gnocchi roller.</p>
+<p>At least they don’t take up much room. I’m almost embarrassed to tell you about the larger gadgets that clutter my cupboards and unit tops.</p>
+		
+
+		
+			<p class="read_more"><a href="http://www.bbc.co.uk/blogs/food/2012/09/confessions-of-a-gadget-junkie.shtml" rel="bookmark">Read the rest of this entry</a></p>
+		
+		
+		 
+	</div>
+</div>
+
+
+			 
+			    <div class="post" id="entry-311006">
+	<h2><a href="http://www.bbc.co.uk/blogs/food/2012/08/why-dont-we-eat-more-cauliflow.shtml" rel="bookmark">Why don't we eat more cauliflower?</a></h2>
+
+	<div class="meta">	
+		<div class="flt-r" style="width:180px">
+			
+				<p style="text-align:right"><a href="http://www.bbc.co.uk/blogs/food/2012/08/why-dont-we-eat-more-cauliflow.shtml" title="Comments made about this entry." rel="comments">Comments 
+(59)
+
+
+
+
+
+</a></p>
+			 
+				
+				<div class="flt-r bbc-st bbc-st-slim bbc-st-colour bbc-st-light">
+					<a href="http://www.bbc.co.uk/modules/sharetools/share?url=http%3A%2F%2Fwww.bbc.co.uk%2Fblogs%2Ffood%2F2012%2F08%2Fwhy-dont-we-eat-more-cauliflow.shtml&amp;appId=news">Share this page</a>
+				</div>
+			 
+		</div>
+		
+		<div style="float:left; width:420px">
+		
+				
+			<p class="categories">Post categories: <a href="http://www.bbc.co.uk/blogs/food/food-trends/" rel="tag" title="">Food trends</a><span class="delimiter">, </span><a href="http://www.bbc.co.uk/blogs/food/retro-recipes/" rel="tag" title="">retro recipes</a>			
+			</p>
+			
+		
+			<p class="flt-l user-pic">
+					
+					<a href="http://www.bbc.co.uk/blogs/food/clare_hargreaves/">
+	<img class="author_pic" src="../../staticarchive/148090b42974d5167eb63648bdf06fda07827d7d.png" width="50" alt="Clare Hargreaves"></a>			
+				
+				<span class="vcard author"><a href="http://www.bbc.co.uk/blogs/food/clare_hargreaves/">Clare Hargreaves</a></span> <span class="separator">|</span> <abbr class="published" title="2012-08-29T14:50:58+00:00">14:50 UK time, Wednesday, 29 August 2012</abbr>
+			</p>
+		</div>
+		<div class="cleardiv"><!-- clearing --></div>
+	</div>
+	
+	<div class="post_content">
+		
+			<p>If there’s one dish that reminds me of childhood home, it’s cauliflower cheese. My mum was a reluctant cook so cauliflower cheese became our staple diet – every day for high tea. We washed it down with weak tea and Women’s Institute cake. Actually, mum did a pretty good job: unlike the cooks at school who turned cauliflower into grey mush, she never overcooked it. And she lavished the magical tree-like florets with generous amounts of cheese-rich sauce.</p>
+<p>So I’m sad to hear that we Brits no longer want to eat this wonderfully eccentric-looking vegetable. Sales have dropped around 35% over the past decade, and last year, nearly half of British households didn’t buy a single cauliflower. In short, if we don’t start buying this snowy brassica again, growers are now warning it could soon become extinct.</p>
+<div class="imgCaptionCenter" style="text-align: center; display: block; "><img class="mt-image-center" style="margin: 0 auto 5px;" src="../../staticarchive/761af1300919c3591c6bb02b0cd4dd221b7566d6.jpg" alt="Cauliflower cheese" width="448" height="256"><p style="margin: 0px auto 20px; width: 448px; color: #666666; font-size: 11px;"> </p>
+</div>
+<p>The reason I’m fighting to keep cauliflower on our tables - apart from bringing back tender childhood memories – is its sheer versatility. It’s crunchily delicious eaten raw in a salad with plenty of lemon, in fritters, or as a pretty crudité to dunk into delicious dips. It combines brilliantly with spices, green beans, cucumbers and courgettes to make a piccalilli, and is amazing in a curry. Cauli is nice roasted too. And few things pair better with fresh scallops than a silky smooth cauliflower purée.</p>
+		
+
+		
+			<p class="read_more"><a href="http://www.bbc.co.uk/blogs/food/2012/08/why-dont-we-eat-more-cauliflow.shtml" rel="bookmark">Read the rest of this entry</a></p>
+		
+		
+		 
+	</div>
+</div>
+
+
+			 
+			    <div class="post" id="entry-310821">
+	<h2><a href="http://www.bbc.co.uk/blogs/food/2012/08/cake-man-v-machine.shtml" rel="bookmark">Cake: man v machine</a></h2>
+
+	<div class="meta">	
+		<div class="flt-r" style="width:180px">
+			
+				<p style="text-align:right"><a href="http://www.bbc.co.uk/blogs/food/2012/08/cake-man-v-machine.shtml" title="Comments made about this entry." rel="comments">Comments 
+(6)
+
+
+
+
+
+</a></p>
+			 
+				
+				<div class="flt-r bbc-st bbc-st-slim bbc-st-colour bbc-st-light">
+					<a href="http://www.bbc.co.uk/modules/sharetools/share?url=http%3A%2F%2Fwww.bbc.co.uk%2Fblogs%2Ffood%2F2012%2F08%2Fcake-man-v-machine.shtml&amp;appId=news">Share this page</a>
+				</div>
+			 
+		</div>
+		
+		<div style="float:left; width:420px">
+		
+				
+			<p class="categories">Post categories: <a href="http://www.bbc.co.uk/blogs/food/baking/" rel="tag" title="">baking</a><span class="delimiter">, </span><a href="http://www.bbc.co.uk/blogs/food/cake/" rel="tag" title="">cake</a><span class="delimiter">, </span><a href="http://www.bbc.co.uk/blogs/food/sponge-cake/" rel="tag" title="">sponge cake</a>			
+			</p>
+			
+		
+			<p class="flt-l user-pic">
+					
+					<a href="http://www.bbc.co.uk/blogs/food/deborah_reddihough/">
+	<img class="author_pic" src="../../staticarchive/743eb272e2f4a256191ce7fe1e10230070ebea21.png" width="50" alt="Deborah Reddihough"></a>			
+				
+				<span class="vcard author"><a href="http://www.bbc.co.uk/blogs/food/deborah_reddihough/">Deborah Reddihough</a></span> <span class="separator">|</span> <abbr class="published" title="2012-08-22T10:10:59+00:00">10:10 UK time, Wednesday, 22 August 2012</abbr>
+			</p>
+		</div>
+		<div class="cleardiv"><!-- clearing --></div>
+	</div>
+	
+	<div class="post_content">
+		
+			<div class="imgCaptionCenter" style="TEXT-ALIGN: left; DISPLAY: block">
+<p>As part of our on-going series on the kitchen gadgets that really count, this time our eye turns to cakes. Discussions in the office pit me against the rest of the team who believe an electric hand whisk is an essential piece of kit when making cakes. I remonstrate that people were making cakes long before we had electricity in our houses, but they insist: cakes are just better when an electric whisk is used. Time to find out…</p>
+</div>
+<div class="imgCaptionCenter" style="text-align: center; display: block; "> </div>
+<div class="imgCaptionCenter" style="text-align: center; display: block; "><img class="mt-image-center" style="margin: 0 auto 5px;" src="../../staticarchive/b47a87ce1eac1806b81725d216da0c1f304f6f51.jpg" alt="Mary Berry's Victoria sponge cake" width="448" height="256"><p style="margin: 0px auto 20px; width: 448px; color: #666666; font-size: 11px;"><strong>Mary Berry's Victoria sandwich is a baking classic and highly rated by users of BBC Food.</strong> </p>
+</div>
+<p><strong>The set up<br></strong>A basic sponge recipe is needed so that we can easily assess any differences in texture, taste and appearance. Moist cakes such as fudgy chocolate cake and carrot cake have more tolerance for slip-ups than simple sponges, so I decide to plump for the classic Victoria sponge. Mary Berry’s perfect Victoria sandwich is our highest-rated sponge cake recipe so, knowing the recipe works, it seems a sensible choice.</p>
+		
+
+		
+			<p class="read_more"><a href="http://www.bbc.co.uk/blogs/food/2012/08/cake-man-v-machine.shtml" rel="bookmark">Read the rest of this entry</a></p>
+		
+		
+		 
+	</div>
+</div>
+
+
+			 
+			    <div class="post" id="entry-310487">
+	<h2><a href="http://www.bbc.co.uk/blogs/food/2012/08/outdoor-entertaining-moro-styl.shtml" rel="bookmark">Outdoor entertaining Moro-style</a></h2>
+
+	<div class="meta">	
+		<div class="flt-r" style="width:180px">
+			
+				<p style="text-align:right"><a href="http://www.bbc.co.uk/blogs/food/2012/08/outdoor-entertaining-moro-styl.shtml" title="Comments made about this entry." rel="comments">Comments 
+(2)
+
+
+
+
+
+</a></p>
+			 
+				
+				<div class="flt-r bbc-st bbc-st-slim bbc-st-colour bbc-st-light">
+					<a href="http://www.bbc.co.uk/modules/sharetools/share?url=http%3A%2F%2Fwww.bbc.co.uk%2Fblogs%2Ffood%2F2012%2F08%2Foutdoor-entertaining-moro-styl.shtml&amp;appId=news">Share this page</a>
+				</div>
+			 
+		</div>
+		
+		<div style="float:left; width:420px">
+		
+				
+			<p class="categories">Post categories: <a href="http://www.bbc.co.uk/blogs/food/bbq/" rel="tag" title="">BBQ</a><span class="delimiter">, </span><a href="http://www.bbc.co.uk/blogs/food/cooking-outdoors/" rel="tag" title="">cooking outdoors</a>			
+			</p>
+			
+		
+			<p class="flt-l user-pic">
+					
+					<a href="http://www.bbc.co.uk/blogs/food/louisa_carter/">
+	<img class="author_pic" src="../../staticarchive/f12e359973ff09e760b7c099c8f61afc648ca691.png" width="50" alt="Louisa Carter"></a>			
+				
+				<span class="vcard author"><a href="http://www.bbc.co.uk/blogs/food/louisa_carter/">Louisa Carter</a></span> <span class="separator">|</span> <abbr class="published" title="2012-08-09T15:07:53+00:00">15:07 UK time, Thursday,  9 August 2012</abbr>
+			</p>
+		</div>
+		<div class="cleardiv"><!-- clearing --></div>
+	</div>
+	
+	<div class="post_content">
+		
+			<p>With hopefully a few weeks of summer to eke out, I got thinking about how to manage outdoor cooking and eating in a more effortless and stylish way than I have in the past.</p>
+<p>When the sun suddenly shines and I decide to throw an impromptu barbecue, it's often the same food that I reach for – sausages, whole mackerel, courgettes halved lengthways and brushed with olive oil; all fine food but it's time for something new.</p>
+<div class="imgCaptionCenter" style="text-align: center; display: block; "><img class="mt-image-center" style="margin: 0 auto 5px;" src="../../staticarchive/eca1cce104c7707139ea6dd189e061a2cd0d4a0f.jpg" alt="Barbecue food " width="448" height="351"></div>
+<p>So who better to ask than Sam and Sam Clark of award-winning restaurant Moro in London? They will be cooking at this weekend’s <a href="http://www.wildernessfestival.com/">Wilderness Festival</a> where food is arguably the headlining act (the line-up of chefs also includes Yottam Ottolenghi, Fergus Henderson and Valentine Warner).</p>
+		
+
+		
+			<p class="read_more"><a href="http://www.bbc.co.uk/blogs/food/2012/08/outdoor-entertaining-moro-styl.shtml" rel="bookmark">Read the rest of this entry</a></p>
+		
+		
+		 
+	</div>
+</div>
+
+
+			 
+			    <div class="post" id="entry-310265">
+	<h2><a href="http://www.bbc.co.uk/blogs/food/2012/08/in-praise-of-british-butter.shtml" rel="bookmark">In praise of British butter</a></h2>
+
+	<div class="meta">	
+		<div class="flt-r" style="width:180px">
+			
+				<p style="text-align:right"><a href="http://www.bbc.co.uk/blogs/food/2012/08/in-praise-of-british-butter.shtml" title="Comments made about this entry." rel="comments">Comments 
+(11)
+
+
+
+
+
+</a></p>
+			 
+				
+				<div class="flt-r bbc-st bbc-st-slim bbc-st-colour bbc-st-light">
+					<a href="http://www.bbc.co.uk/modules/sharetools/share?url=http%3A%2F%2Fwww.bbc.co.uk%2Fblogs%2Ffood%2F2012%2F08%2Fin-praise-of-british-butter.shtml&amp;appId=news">Share this page</a>
+				</div>
+			 
+		</div>
+		
+		<div style="float:left; width:420px">
+		
+				
+			<p class="categories">Post categories: <a href="http://www.bbc.co.uk/blogs/food/butter/" rel="tag" title="">butter</a><span class="delimiter">, </span><a href="http://www.bbc.co.uk/blogs/food/food-producers/" rel="tag" title="">food producers</a>			
+			</p>
+			
+		
+			<p class="flt-l user-pic">
+					
+					<a href="http://www.bbc.co.uk/blogs/food/deborah_reddihough/">
+	<img class="author_pic" src="../../staticarchive/743eb272e2f4a256191ce7fe1e10230070ebea21.png" width="50" alt="Deborah Reddihough"></a>			
+				
+				<span class="vcard author"><a href="http://www.bbc.co.uk/blogs/food/deborah_reddihough/">Deborah Reddihough</a></span> <span class="separator">|</span> <abbr class="published" title="2012-08-03T12:00:00+00:00">12:00 UK time, Friday,  3 August 2012</abbr>
+			</p>
+		</div>
+		<div class="cleardiv"><!-- clearing --></div>
+	</div>
+	
+	<div class="post_content">
+		
+			<p>When it comes to dairy, the French are commonly considered the best producers in the world, with some regions being given the protection of AOP status. And when we’re looking for something special to smear on our bread we reach out for French products, because they’re the best. Right? Well, maybe not.</p>
+<p>As the Isigny AOP butter website puts it “How do we explain the fact that gourmets favour Isigny butter? It is simple! The Isigny terroir has the advantage of a mild, damp climate”. Mmm, remind you of anything? The British climate is nothing if not mild and damp - so why aren’t our dairy products held in equally high esteem?</p>
+<div class="imgCaptionCenter" style="text-align: center; display: block; "><img class="mt-image-center" style="margin: 0 auto 5px;" src="../../staticarchive/bd9cf366b12af2b6002866903b27861fa132567d.jpg" alt="Butter" width="448" height="344"><p style="margin: 0px auto 20px; width: 448px; color: #666666; font-size: 11px;">British: you can't put a better bit of butter on your knife.</p>
+</div>
+<p>There are lots of fabulous butters available in the UK and you don’t have to look far to find them: most supermarkets stock butter from small, local producers and typically the price will be less than that of the big-brand butters. So you can support small businesses and dairies, pay less and most probably get a better tasting product – what’s not to like?</p>
+<p>The UK’s mild summers punctuated with frequent bouts of drizzle produce green and pleasant lands that are perfect for dairy production. The best cream comes from dairy cows grazed in meadows, so climate is crucial because it affects what will grow in the fields and therefore what the cow eats. And a cow’s diet has a marked effect on the flavour of butter.</p>
+		
+
+		
+			<p class="read_more"><a href="http://www.bbc.co.uk/blogs/food/2012/08/in-praise-of-british-butter.shtml" rel="bookmark">Read the rest of this entry</a></p>
+		
+		
+		 
+	</div>
+</div>
+
+
+			 
+	</div>
+	<!--contents ends here-->
+	
+	<!-- sidebar starts here -->
+	<div class="sidebar">
+		
+<!-- mt:IfNonEmpty tag="BlogDescription" -->
+<div class="block block-one about">
+	<div class="wrap1">
+		<div class="wrap2">
+			<div class="wrap3">	
+				<div class="title"><h3>About this blog</h3></div>
+				<div class="inner">
+					BBC Food blog - BBC chefs, presenters and experts pop in to share their food knowledge. Plus we offer a round-up of what’s hot in the world of food on the web.
+					<div class="cleardiv"><!--clearing--></div>
+					<p style="margin:10px 0 0 0!important">For the latest updates across BBC blogs, <br><a href="http://www.bbc.co.uk/blogs">visit the Blogs homepage</a>.</p>
+					<div class="cleardiv"><!--clearing--></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /mt:IfNonEmpty -->
+<div class="block rss block-one">
+	<div class="wrap1">
+	 <div class="wrap2">
+	  <div class="wrap3">
+		<div class="title"><h3>Subscribe to BBC Food blog</h3></div>
+	   	<div class="inner">
+			<p>You can stay up to date with BBC Food blog via these feeds.</p>	
+<p class="rss_link first"><a href="http://www.bbc.co.uk/blogs/food/rss.xml">BBC Food blog Feed</a><span>(RSS)</span></p>
+<p class="rss_link"><a href="http://www.bbc.co.uk/blogs/food/atom.xml">BBC Food blog Feed</a><span>(ATOM)</span></p>			
+			<p>If you aren't sure what RSS is you'll find <a href="http://news.bbc.co.uk/1/hi/help/3223484.stm">our beginner's guide to RSS</a> useful.</p>
+			</div>	
+		</div>
+	 </div>
+	</div>
+</div>
+
+<!--<div class="block rss block-one qa trans">
+<div class="wrap1">
+<div class="wrap2">
+<div class="wrap3">
+ <div class="title">
+  <h3 class="qa"><span>Q&amp;A Messageboard</span></h3>
+ </div>
+ <div class="inner">
+  <a href="/dna/mbfood/NF2670471"><img src="/blogs/food//f/bgs/message-board.jpg" width="276" height="102" alt="BBC Food Q&amp;A Message board" /></a>
+  <p><a href="/dna/mbfood/NF2670471">Ask fellow foodies</a> for cookery advice on our messageboard. Share culinary problems and swap tips and tricks. </p>
+ </div>
+</div>
+</div>
+</div>  
+</div>-->
+<div class="block rss block-one qa trans">
+<div class="wrap1">
+<div class="wrap2">
+<div class="wrap3">
+ <div class="title">
+  <h3 class="qa"><span>@BBCFood on Twitter</span></h3>
+ </div>
+ <div class="inner">
+  <a href="http://twitter.com/bbcfood"><img src="../../staticarchive/36976a51c7ebcd8888ff60de61ee6670176b9338.jpg" width="276" height="102" alt="Twitter"></a>
+  <p><a href="http://twitter.com/bbcfood">Follow @BBC Food</a></p>
+ </div>
+</div>
+</div>
+</div>  
+</div>
+<div class="block rss block-one relatedlinks">
+<div class="wrap1">
+<div class="wrap2">
+<div class="wrap3">
+ <div class="title">
+  <h3 class="relatedlinks"><span>Currently reading</span></h3>
+ </div>
+ <div class="inner">
+  <ul class="other"><li><a href="http://foodcurated.com">Food curated</a></li>
+<li><a href="http://www.thebiglunch.com/">The big lunch</a></li>
+ <li><a href="http://www.sustainweb.org/realbread/">Real bread campaign</a></li>
+ <li><a href="http://marmitelover.blogspot.com/">MsMarmitelover</a></li> 
+<li><a href="http://www.whatkatieate.blogspot.com/">What Katie ate</a></li>
+ <li><a href="http://ramblingspoon.com/blog/">Rambling spoon</a></li>
+<li><a href="http://www.orangette.blogspot.com/">Orangette</a></li>
+<li><a href="http://www.foodforlife.org.uk/">Food for life</a></li>
+ <li><a href="http://www.britishlarder.co.uk/">The British larder</a></li> 
+<li><a href="http://www.davidlebovitz.com/">David Lebovitz</a></li>
+ <li><a href="http://www.mytartelette.com/">Tartelette</a></li>
+<li><a href="http://www.joythebaker.com/">Joy the baker</a></li>
+<li><a href="http://www.latartinegourmande.com/">La tartine gourmande</a></li>
+  <li><a href="http://smittenkitchen.com">Smitten kitchen</a></li>
+<li><a href="http://www.jenniferjoyce.co.uk/blog/">Meals in heels</a></li>
+<li><a href="http://www.101cookbooks.com/">101 cookbooks</a></li>
+<li><a href="http://cannelle-vanille.blogspot.com/">Cannelle et vanille</a></li>
+<li><a href="http://mattbites.com/">Matt bites</a></li>
+<li><a href="http://racheleats.wordpress.com/">Rachel eats</a></li>
+<li><a href="http://www.freshoven.blogspot.com">Fresh from the oven</a></li>
+<li><a href="http://www.danlepard.com">Dan Lepard: breadmaking</a></li>
+  <li><a href="http://www.wildyeastblog.com/">Wild yeast blog</a></li>
+  </ul><p>Some of these links go to external sites. The BBC holds no responsibility for the content within these sites.</p>
+ </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+			
+	</div>
+	<!-- sidebar ends here -->
+  </div>
+
+<!-- food-hs-related start here --> 
+<div class="cleardiv"><!--clearing div--></div>
+    
+<!--more-->
+    <h2 style="margin-bottom:10px;">Other posts from this blog</h2> 
+<ul class="sidebar-list"><!-- was id 114 (GW) --><li class="entry">
+<div>
+<h4><a href="http://www.bbc.co.uk/blogs/food/2012/07/bread-man-v-machine.shtml">Bread: man v machine</a></h4>
+<ul class="entrydetails" style="border-top:1px solid #cccccc;border-bottom:1px solid #cccccc;margin:15px 0 15px  0;"><li class="author">By Suzy Mckeever</li>
+<li class="date">31 Jul 12, 10:01 AM</li>
+</ul>
+Set up I set out to test the results of making bread at home, with a bread machine and by...<br><a href="http://www.bbc.co.uk/blogs/food/2012/07/bread-man-v-machine.shtml" title="Read the 'Bread: man v machine' blog entry">Read more</a> 
+</div> 
+</li>  
+ <!-- was id 114 (GW) --> 
+<li class="entry">
+<div>
+<h4><a href="http://www.bbc.co.uk/blogs/food/2012/07/the-hot-dog-goes-posh.shtml">The hot dog goes posh</a></h4>
+<ul class="entrydetails" style="border-top:1px solid #cccccc;border-bottom:1px solid #cccccc;margin:15px 0 15px  0;"><li class="author">By Clare Hargreaves</li>
+<li class="date">26 Jul 12, 04:30 PM</li>
+</ul>
+The hot dog, beloved by American baseball fans, is probably not your idea of high-end gastronomy. But now a brave...<br><a href="http://www.bbc.co.uk/blogs/food/2012/07/the-hot-dog-goes-posh.shtml" title="Read the 'The hot dog goes posh' blog entry">Read more</a> 
+</div> 
+</li>  
+ <!-- was id 114 (GW) --> 
+<li class="entry">
+<div>
+<h4><a href="http://www.bbc.co.uk/blogs/food/2012/07/seafood-on-a-budget---can-you.shtml">Seafood on a budget - can you have great quality for less?</a></h4>
+<ul class="entrydetails" style="border-top:1px solid #cccccc;border-bottom:1px solid #cccccc;margin:15px 0 15px  0;"><li class="author">By Hannah Briggs</li>
+<li class="date">24 Jul 12, 09:57 AM</li>
+</ul>
+ On my way to Port Eliot festival in Cornwall last weekend, I had one thing on my mind. Seafood....<br><a href="http://www.bbc.co.uk/blogs/food/2012/07/seafood-on-a-budget---can-you.shtml" title="Read the 'Seafood on a budget - can you have great quality for less?' blog entry">Read more</a> 
+</div> 
+</li>  
+ <!-- was id 114 (GW) --> 
+<li class="entry">
+<div>
+<h4><a href="http://www.bbc.co.uk/blogs/food/2012/07/olympics-how-to-ensure-your-lu.shtml">Olympic lunchboxes that pass muster - and security</a></h4>
+<ul class="entrydetails" style="border-top:1px solid #cccccc;border-bottom:1px solid #cccccc;margin:15px 0 15px  0;"><li class="author">By Deborah Reddihough</li>
+<li class="date">20 Jul 12, 11:33 AM</li>
+</ul>
+ If you’ve managed to bag tickets for the forthcoming games but don’t want to pay the high prices for...<br><a href="http://www.bbc.co.uk/blogs/food/2012/07/olympics-how-to-ensure-your-lu.shtml" title="Read the 'Olympic lunchboxes that pass muster - and security' blog entry">Read more</a> 
+</div> 
+</li>  
+ 
+</ul>
+
+    
+<!--end more-->
+<!-- food-hs-related end here --> 
+ 
+<div class="cleardiv"><!--clearing div--></div>  
+
+</div>
+<!--main content ends here-->
+
+<div class="cleardiv"><!--clearing div--></div>
+
+<div id="explore">  
+   	<div class="more content">
+		<h2><a name="jump_more"></a>More from this blog...</h2>
+			<!--grids-->
+			<div class="grids">
+
+				
+<div class="unit topical">
+ <div class="title"><h3>Topical posts on this blog</h3></div>
+    <div class="inner">
+        <div id="beingdiscussedNow">
+<h2>Being Discussed Now</h2>
+<ul class="dna-list"><li><a href="http://www.bbc.co.uk/blogs/food/2012/10/goodbye-from-bbc-food.shtml">Goodbye from the BBC Food blog</a><span>(21)</span></li>
+  <li><a href="http://www.bbc.co.uk/blogs/food/2012/06/syllabub-the-first-frappuccino.shtml">Syllabub: The first Frappuccino?</a><span>(1)</span></li>
+  <li><a href="http://www.bbc.co.uk/blogs/food/2012/01/chowder-power.shtml">Chowder power</a><span>(1)</span></li>
+  <li><a href="http://www.bbc.co.uk/blogs/food/2012/09/confessions-of-a-gadget-junkie.shtml">Confessions of a gadget junkie</a><span>(18)</span></li>
+  <li><a href="http://www.bbc.co.uk/blogs/food/2012/08/why-dont-we-eat-more-cauliflow.shtml">Why don't we eat more cauliflower?</a><span>(59)</span></li>
+  <li><a href="http://www.bbc.co.uk/blogs/food/2012/08/cake-man-v-machine.shtml">Cake: man v machine</a><span>(6)</span></li>
+  <li><a href="http://www.bbc.co.uk/blogs/food/2012/07/seafood-on-a-budget---can-you.shtml">Seafood on a budget - can you have great quality for less?</a><span>(3)</span></li>
+  <li><a href="http://www.bbc.co.uk/blogs/food/2012/08/outdoor-entertaining-moro-styl.shtml">Outdoor entertaining Moro-style</a><span>(2)</span></li>
+  <li><a href="http://www.bbc.co.uk/blogs/food/2012/08/in-praise-of-british-butter.shtml">In praise of British butter</a><span>(11)</span></li>
+  <li><a href="http://www.bbc.co.uk/blogs/food/2012/07/the-hot-dog-goes-posh.shtml">The hot dog goes posh</a><span>(8)</span></li>
+</ul></div>
+    </div>
+</div>
+
+<div class="unit archives">
+	<!--block item - dark green top box-->
+	<div class="title"><h3>Archives</h3></div>
+	<div class="inner">
+		<p><strong>Past twelve months</strong></p>
+	 <ul><li><a href="http://www.bbc.co.uk/blogs/food/2012/10/">October 2012 (1)</a></li>
+
+    
+        
+	      <li><a href="http://www.bbc.co.uk/blogs/food/2012/09/">September 2012 (1)</a></li>
+
+    
+        
+	      <li><a href="http://www.bbc.co.uk/blogs/food/2012/08/">August 2012 (4)</a></li>
+
+    
+        
+	      <li><a href="http://www.bbc.co.uk/blogs/food/2012/07/">July 2012 (7)</a></li>
+
+    
+        
+	      <li><a href="http://www.bbc.co.uk/blogs/food/2012/06/">June 2012 (6)</a></li>
+
+    
+        
+	      <li><a href="http://www.bbc.co.uk/blogs/food/2012/05/">May 2012 (8)</a></li>
+
+    
+        
+	      <li><a href="http://www.bbc.co.uk/blogs/food/2012/04/">April 2012 (6)</a></li>
+
+    
+        
+	      <li><a href="http://www.bbc.co.uk/blogs/food/2012/03/">March 2012 (8)</a></li>
+
+    
+        
+	      <li><a href="http://www.bbc.co.uk/blogs/food/2012/02/">February 2012 (6)</a></li>
+
+    
+        
+	      <li><a href="http://www.bbc.co.uk/blogs/food/2012/01/">January 2012 (6)</a></li>
+
+    
+        
+	      <li><a href="http://www.bbc.co.uk/blogs/food/2011/12/">December 2011 (8)</a></li>
+
+    
+        
+	      <li><a href="http://www.bbc.co.uk/blogs/food/2011/11/">November 2011 (9)</a></li>
+
+    
+</ul><p class="all"><a href="http://www.bbc.co.uk/blogs/food/archives.shtml">complete archive</a></p>			
+	</div>
+	<!--end item - dark green top box-->
+	
+</div>
+
+	<div class="unit tags">
+	<!--block item - dark green top box-->
+	<div class="title"><h3>Categories</h3></div>
+	<div class="inner">
+              		<p>These are some of the popular topics this blog covers.</p>
+		
+						<ul class="tags"><li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/asian-recipes/">asian recipes</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/bake-sale/">bake sale</a></li>
+							
+									<li class="rank-26"><a href="http://www.bbc.co.uk/blogs/food/baking/">baking</a></li>
+							
+									<li class="rank-3"><a href="http://www.bbc.co.uk/blogs/food/bbq/">bbq</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/beef/">beef</a></li>
+							
+									<li class="rank-4"><a href="http://www.bbc.co.uk/blogs/food/beer/">beer</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/brands/">brands</a></li>
+							
+									<li class="rank-7"><a href="http://www.bbc.co.uk/blogs/food/breadmaking/">breadmaking</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/burgers/">burgers</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/burns-night/">burns night</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/butter/">butter</a></li>
+							
+									<li class="rank-20"><a href="http://www.bbc.co.uk/blogs/food/cake/">cake</a></li>
+							
+									<li class="rank-4"><a href="http://www.bbc.co.uk/blogs/food/cheese/">cheese</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/chicken-mince/">chicken mince</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/chocolate/">chocolate</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/chocolate-tempering/">chocolate tempering</a></li>
+							
+									<li class="rank-18"><a href="http://www.bbc.co.uk/blogs/food/christmas/">christmas</a></li>
+							
+									<li class="rank-3"><a href="http://www.bbc.co.uk/blogs/food/cookbooks/">cookbooks</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/cookies/">cookies</a></li>
+							
+									<li class="rank-4"><a href="http://www.bbc.co.uk/blogs/food/cooking-outdoors/">cooking outdoors</a></li>
+							
+									<li class="rank-8"><a href="http://www.bbc.co.uk/blogs/food/cooking-with-children/">cooking with children</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/courgette/">courgette</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/creme-brulee/">crème brulée</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/cucumber/">cucumber</a></li>
+							
+									<li class="rank-3"><a href="http://www.bbc.co.uk/blogs/food/cupcakes/">cupcakes</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/dripping-cake/">dripping cake</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/e-numbers/">e numbers</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/easter/">easter</a></li>
+							
+									<li class="rank-4"><a href="http://www.bbc.co.uk/blogs/food/eating-on-a-budget/">eating on a budget</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/eggs/">eggs</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/environmental-issues/">environmental issues</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/fish/">fish</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/food-photography/">food photography</a></li>
+							
+									<li class="rank-7"><a href="http://www.bbc.co.uk/blogs/food/food-producers/">food producers</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/food-stylist/">food stylist</a></li>
+							
+									<li class="rank-6"><a href="http://www.bbc.co.uk/blogs/food/food-trends/">food trends</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/foraging/">foraging</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/french-cuisine/">french cuisine</a></li>
+							
+									<li class="rank-4"><a href="http://www.bbc.co.uk/blogs/food/frozen-food/">frozen food</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/gluten-free-food/">gluten-free food</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/goose/">goose</a></li>
+							
+									<li class="rank-4"><a href="http://www.bbc.co.uk/blogs/food/great-british-food-revival/">great british food revival</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/great-british-menu/">great british menu</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/growing-food/">growing food</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/halloween/">halloween</a></li>
+							
+									<li class="rank-7"><a href="http://www.bbc.co.uk/blogs/food/healthy-eating/">healthy eating</a></li>
+							
+									<li class="rank-7"><a href="http://www.bbc.co.uk/blogs/food/historical-food/">historical food</a></li>
+							
+									<li class="rank-4"><a href="http://www.bbc.co.uk/blogs/food/holiday-food/">holiday food</a></li>
+							
+									<li class="rank-4"><a href="http://www.bbc.co.uk/blogs/food/indian-cuisine/">indian cuisine</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/italian-cuisine/">italian cuisine</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/jam/">jam</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/jelly/">jelly</a></li>
+							
+									<li class="rank-3"><a href="http://www.bbc.co.uk/blogs/food/lunchboxes/">lunchboxes</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/markets/">markets</a></li>
+							
+									<li class="rank-3"><a href="http://www.bbc.co.uk/blogs/food/marmalade/">marmalade</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/marrow/">marrow</a></li>
+							
+									<li class="rank-4"><a href="http://www.bbc.co.uk/blogs/food/masterchef/">masterchef</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/nigel-slaters-simple-suppers/">nigel slater's simple suppers</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/off-the-books/">off the books</a></li>
+							
+									<li class="rank-3"><a href="http://www.bbc.co.uk/blogs/food/omelette/">omelette</a></li>
+							
+									<li class="rank-4"><a href="http://www.bbc.co.uk/blogs/food/party-food/">party food</a></li>
+							
+									<li class="rank-4"><a href="http://www.bbc.co.uk/blogs/food/pasta/">pasta</a></li>
+							
+									<li class="rank-4"><a href="http://www.bbc.co.uk/blogs/food/pastry/">pastry</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/pear/">pear</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/photoshoot/">photoshoot</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/pizza/">pizza</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/pork-scratchings/">pork scratchings</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/preserves/">preserves</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/prison-food/">prison food</a></li>
+							
+									<li class="rank-4"><a href="http://www.bbc.co.uk/blogs/food/raymond-blancs-kitchen-secrets/">raymond blanc's kitchen secrets</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/ready-steady-cook/">ready steady cook</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/restaurants/">restaurants</a></li>
+							
+									<li class="rank-3"><a href="http://www.bbc.co.uk/blogs/food/retro-recipes/">retro recipes</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/rick-steins-spain/">rick stein's spain</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/royal-wedding/">royal wedding</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/rum-punch/">rum punch</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/salt/">salt</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/sandwiches/">sandwiches</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/scandinavian-food/">scandinavian food</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/seasonal-food/">seasonal food</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/shellfish/">shellfish</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/shopping-baskets/">shopping baskets</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/smoked-salmon/">smoked salmon</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/something-for-the-weekend/">something for the weekend</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/sorrel/">sorrel</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/soup/">soup</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/spanish-cuisine/">spanish cuisine</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/spices/">spices</a></li>
+							
+									<li class="rank-3"><a href="http://www.bbc.co.uk/blogs/food/sponge-cake/">sponge cake</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/stir-fries/">stir fries</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/storing-dried-pulses/">storing dried pulses</a></li>
+							
+									<li class="rank-15"><a href="http://www.bbc.co.uk/blogs/food/strange-food/">strange food</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/sugar-work/">sugar work</a></li>
+							
+									<li class="rank-3"><a href="http://www.bbc.co.uk/blogs/food/sustainable-food/">sustainable food</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/sweetcorn/">sweetcorn</a></li>
+							
+									<li class="rank-18"><a href="http://www.bbc.co.uk/blogs/food/the-food-programme/">the food programme</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/the-good-cook/">the good cook</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/tomato-sauce/">tomato sauce</a></li>
+							
+									<li class="rank-1"><a href="http://www.bbc.co.uk/blogs/food/tomatoes/">tomatoes</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/twitter/">twitter</a></li>
+							
+									<li class="rank-3"><a href="http://www.bbc.co.uk/blogs/food/valentines-day/">valentine's day</a></li>
+							
+									<li class="rank-4"><a href="http://www.bbc.co.uk/blogs/food/vegetarian-cooking/">vegetarian cooking</a></li>
+							
+									<li class="rank-3"><a href="http://www.bbc.co.uk/blogs/food/weddings/">weddings</a></li>
+							
+									<li class="rank-2"><a href="http://www.bbc.co.uk/blogs/food/weekend-projects/">weekend projects</a></li>
+							
+						 </ul></div>
+	<!--end item - dark green top box-->
+</div>
+
+
+<div class="unit authors">
+<div class="title"><h3>Latest contributors</h3></div>
+<div class="inner">
+
+
+	<ul><li><a href="http://www.bbc.co.uk/blogs/food/emily_angle/">Emily Angle</a></li>
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	            <li><a href="http://www.bbc.co.uk/blogs/food/fiona_beckett/">Fiona Beckett</a></li>
+	        
+	
+	        
+	
+	        
+	
+	        
+	
+	        
+	            <li><a href="http://www.bbc.co.uk/blogs/food/brendan_lancaster/">Brendan Lancaster</a></li>
+	        
+	
+	        
+	            <li><a href="http://www.bbc.co.uk/blogs/food/suzy_mckeever/">Suzy Mckeever</a></li>
+	        
+	
+	        
+	            <li><a href="http://www.bbc.co.uk/blogs/food/anna-louise_taylor/">Anna-Louise Taylor</a></li>
+	        
+	
+	        
+	            <li><a href="http://www.bbc.co.uk/blogs/food/louisa_carter/">Louisa Carter</a></li>
+	        
+	
+	        
+	            <li><a href="http://www.bbc.co.uk/blogs/food/deborah_reddihough/">Deborah Reddihough</a></li>
+	        
+	
+	        
+	            <li><a href="http://www.bbc.co.uk/blogs/food/hannah_briggs/">Hannah Briggs</a></li>
+	        
+	
+	        
+	            <li><a href="http://www.bbc.co.uk/blogs/food/clare_hargreaves/">Clare Hargreaves</a></li>
+	        
+	
+	</ul></div>
+</div>
+
+			</div>	
+			<!-- end grids-->
+	</div>
+</div>
+
+
+
+
+</div>
+
+<script type="text/javascript" src="../../staticarchive/a6d9e652f6ae17eb1e582e3c58afb64e417a7216.js"></script><script type="text/javascript">set_latest_blog(550);</script><!--MT global footer start--></div>   <div id="blq-mast" class="blq-rst blq-default-domestic blq-new-nav" lang="en-GB"> <div id="blq-sign-in">   <div id="id-status" class="blq-id-v4"> <div class="id-out id-gel"> <h2 class="blq-hide">BBC iD</h2> <a href="https://ssl.bbc.co.uk/id/status" id="blq-idstatus-link"> <span class="id-icon"> <span></span> </span> <span id="blq-idstatus-text"> BBC iD </span> <span class="id-spinner"></span> <span class="blq-dropdown-arrow"> <span></span> </span> </a> </div> <div id="id-status-nav"> <div class="id-in blq-rst"> <ul><li> <a name="idDash" class="blq-nogo has-ptrt idDash" href="https://ssl.bbc.co.uk/id/settings"> Settings </a> </li> <li> <a name="idSignout" class="blq-nogo has-ptrt idSignout" href="https://ssl.bbc.co.uk/id/signout"> Sign out </a> </li> </ul></div> </div> </div>          </div>  <form method="get" id="blq-search-form" action="http://search.bbc.co.uk/search" accept-charset="utf-8"> <p id="blq-nav-search">  <input type="hidden" name="go" value="toolbar"><input type="hidden" name="uri" value="/blogs/food/"><label for="blq-search" class="blq-hide">Search term:</label> <input id="blq-search" type="text" name="q" value="" maxlength="128"><input id="blq-search-btn" type="submit" value="Search"></p> </form>   <h2 class="blq-hide">BBC navigation</h2> <ul id="blq-nav-main" class="blq-not-uk"><li id="blq-nav-n"><a href="http://www.bbc.co.uk/news/" hreflang="en-GB">News</a></li>  <li id="blq-nav-s"><a href="http://www.bbc.co.uk/sport/" hreflang="en-GB">Sport</a></li> <li id="blq-nav-w"><a href="http://www.bbc.co.uk/weather/" hreflang="en-GB">Weather</a></li>  <li id="blq-nav-i">  <a href="http://www.bbc.co.uk/iplayer/" hreflang="en-GB">iPlayer</a>  </li>  <li id="blq-nav-t"><a href="http://www.bbc.co.uk/tv/" hreflang="en-GB">TV</a></li>  <li id="blq-nav-r"><a href="http://www.bbc.co.uk/radio/" hreflang="en-GB">Radio</a></li> <li id="blq-nav-m"><a href="index.html#blq-nav">More…</a></li>  </ul></div>  <div id="blq-nav" class="blq-blue"> <div id="blq-nav-links" class="blq-clearfix" lang="en-GB"> <div id="blq-nav-links-inner">  <ul class="blq-nav-sub blq-first"><li><a href="http://www.bbc.co.uk/cbbc/">CBBC</a></li> <li><a href="http://www.bbc.co.uk/cbeebies/">CBeebies</a></li> <li><a href="http://www.bbc.co.uk/comedy/">Comedy</a></li> <li><a href="../../food/index.html">Food</a></li> <li><a href="http://www.bbc.co.uk/history/">History</a></li> </ul><ul class="blq-nav-sub"><li><a href="http://www.bbc.co.uk/learning/">Learning</a></li> <li><a href="http://www.bbc.co.uk/music/">Music</a></li> <li><a href="http://www.bbc.co.uk/science/">Science</a></li> <li><a href="http://www.bbc.co.uk/nature/">Nature</a></li> <li><a href="http://www.bbc.co.uk/local/">Local</a></li> </ul><ul class="blq-nav-sub blq-last"><li><a href="http://www.bbc.co.uk/northernireland/">Northern Ireland</a></li> <li><a href="http://www.bbc.co.uk/scotland/">Scotland</a></li> <li><a href="http://www.bbc.co.uk/wales/">Wales</a></li> <li id="blq-az"><a href="http://www.bbc.co.uk/a-z/">Full A-Z<span class="blq-hide"> of BBC sites</span></a></li> </ul></div> </div> </div>  <!--[if IE 6]> <div id="blq-ie6-upgrade"> <p> <span>You're using the Internet Explorer 6 browser to view the BBC website. Our site will work much better if you change to a more modern browser. It's free, quick and easy.</span> <a href="http://www.browserchoice.eu/">Find out more <span>about upgrading your browser</span> here&hellip;</a> </p> </div> <![endif]-->  <div id="blq-foot" lang="en-GB" class="blq-rst blq-clearfix blq-foot-white">  <div id="blq-footlinks"> <h2 class="blq-hide">BBC links</h2> <ul><li class="blq-footlinks-row"> <ul class="blq-footlinks-row-list"><li><a href="http://m.bbc.co.uk/">Mobile site</a></li>      <li><a href="http://www.bbc.co.uk/terms/">Terms of Use</a></li>       <li><a href="http://www.bbc.co.uk/aboutthebbc/">About the BBC</a></li>  </ul></li> <li class="blq-footlinks-row"> <ul class="blq-footlinks-row-list"><li><a href="http://www.bbc.co.uk/privacy/">Privacy</a></li>       <li><a href="http://www.bbc.co.uk/accessibility/">Accessibility Help</a></li>  </ul></li> <li class="blq-footlinks-row"> <ul class="blq-footlinks-row-list"><li><a href="http://www.bbc.co.uk/privacy/cookies/about">Cookies</a></li>   <li>     <a href="../../food/feedback.html">Contact the BBC</a> </li>  </ul></li> <li class="blq-footlinks-row"> <ul class="blq-footlinks-row-list"><li><a href="http://www.bbc.co.uk/guidance/">Parental Guidance</a></li>  </ul></li>  </ul></div>   <div id="blq-foot-blocks" class="blq-footer-image-dark"><img src="../../staticarchive/f84e841a6d5bb9d583155a11088eb9c842b9882f.png" width="84" height="24" alt="BBC"></div> <p id="blq-disclaim"><span id="blq-copy">BBC © 2014</span> <a href="http://www.bbc.co.uk/help/web/links/">The BBC is not responsible for the content of external sites. Read more.</a></p> <div id="blq-obit"><p><strong>This page is best viewed in an up-to-date web browser with style sheets (CSS) enabled. While you will be able to view the content of this page in your current browser, you will not be able to get the full visual experience. Please consider upgrading your browser software or enabling style sheets (CSS) if you are able to do so.</strong></p></div> </div> </div>  </div>  <script type="text/javascript"> if (typeof require !== 'undefined') { require(['istats-1'], function(istats){ istats.track('external', { region: document.getElementById('blq-main') }); istats.track('download', { region: document.getElementById('blq-main') }); }); } </script></body></html>

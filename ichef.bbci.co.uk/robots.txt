@@ -1,0 +1,5 @@
+# v.3.6.5
+# ichef.bbci.co.uk
+
+User-agent: Googlebot-Image
+Disallow: /news/*/media/images/80230000/jpg/_80230430_img_2454.jpg
